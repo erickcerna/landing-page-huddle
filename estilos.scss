@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft_Magenta: hsl(300, 69%, 71%);
+}
+
+body{
+    background-color: var(--Violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 45px;
+    margin-bottom: 50px;
+
+    &-img{
+        height: 200px;
+        width: 200px;
+        margin-left: 40px;
+
+    }
+
+}
+
+.main{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    &-left{
+        width: 50%;
+
+        img{
+            height: 400px;
+            width:90%;
+            margin-left: 40px;
+        }
+    }
+
+    &-right{
+        width: 50%;
+
+        &-title{
+            color: white;
+            font-weight: 600;
+            line-height: 45px;
+            font-family: 'Poppins', sans-serif;
+            margin: 25px 0;
+
+
+        }
+
+        &-paragraft{
+            color: white;
+            font-weight: 400;
+            line-height: 30px;
+            width: 70%
+
+        }
+
+        button{
+            padding: 15px 50px;
+            border-radius: 25px;
+            background-color: white;
+            color: var(--Violet);
+            border: none;
+            box-shadow: 7px 7px 5px -1px rgba(0,0,0,0.13);
+            margin: 20px 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer{
+
+    &__icons{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        flex-wrap: wrap;
+
+
+        &--icon{
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+    }
+
+    &__attribution{
+        color: white;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+}
+
